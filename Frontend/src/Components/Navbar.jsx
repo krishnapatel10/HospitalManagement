@@ -21,11 +21,9 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
-            <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
             <Link to="/doctors" className="text-gray-700 hover:text-blue-600">Doctors</Link>
-            <Link to="/departments" className="text-gray-700 hover:text-blue-600">Departments</Link>
-            <Link to="/appointments" className="text-gray-700 hover:text-blue-600">Appointments</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+            <Link to="/bookappointments" className="text-gray-700 hover:text-blue-600">BookAppointments</Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -40,12 +38,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-2 shadow-md">
-          <Link to="/" onClick={toggleMenu} className="block text-gray-700 hover:text-blue-600">Home</Link>
-          <Link to="/about" onClick={toggleMenu} className="block text-gray-700 hover:text-blue-600">About</Link>
-          <Link to="/doctors" onClick={toggleMenu} className="block text-gray-700 hover:text-blue-600">Doctors</Link>
-          <Link to="/departments" onClick={toggleMenu} className="block text-gray-700 hover:text-blue-600">Departments</Link>
-          <Link to="/appointments" onClick={toggleMenu} className="block text-gray-700 hover:text-blue-600">Appointments</Link>
-          <Link to="/contact" onClick={toggleMenu} className="block text-gray-700 hover:text-blue-600">Contact</Link>
+          <Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link to="/doctors" className="text-gray-700 hover:text-blue-600">Doctors</Link>
+            <Link to="/bookappointments" className="text-gray-700 hover:text-blue-600">BookAppointments</Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
         </div>
       )}
     </nav>

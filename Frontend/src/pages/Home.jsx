@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -25,19 +26,16 @@ const Home = () => {
 
       {/* Features Section */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
-          <div className="shadow-lg rounded-xl p-6 bg-blue-100 hover:bg-blue-200 transition">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 text-center">
+          <Link to={"/bookappointments"}><div className="shadow-lg rounded-xl p-6 bg-blue-100 hover:bg-blue-200 transition">
             <h2 className="text-2xl font-semibold mb-2">Book Appointments</h2>
             <p>Easily schedule your consultation with our specialists.</p>
-          </div>
-          <div className="shadow-lg rounded-xl p-6 bg-green-100 hover:bg-green-200 transition">
+          </div></Link>
+          <Link to={"/doctors"}><div className="shadow-lg rounded-xl p-6 bg-green-100 hover:bg-green-200 transition">
             <h2 className="text-2xl font-semibold mb-2">Our Doctors</h2>
             <p>Meet our team of highly qualified and experienced doctors.</p>
-          </div>
-          <div className="shadow-lg rounded-xl p-6 bg-yellow-100 hover:bg-yellow-200 transition">
-            <h2 className="text-2xl font-semibold mb-2">Departments</h2>
-            <p>Explore our departments including Cardiology, Neurology, and more.</p>
-          </div>
+          </div></Link>
+         
         </div>
       </section>
 
@@ -45,9 +43,9 @@ const Home = () => {
       <section className="bg-blue-50 py-12 px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">Need urgent care?</h2>
         <p className="mb-6">Contact us or visit the emergency department immediately.</p>
-        <a href="/appointment" className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
+        <Link to={"/appointments"} className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
           Book an Appointment
-        </a>
+        </Link>
       </section>
     </div>
   );
