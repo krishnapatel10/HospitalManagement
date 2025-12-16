@@ -1,0 +1,30 @@
+# Environment files
+.env
+.env.local
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# Build files
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Uploads
+uploads/
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
